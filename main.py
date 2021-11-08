@@ -28,7 +28,7 @@ class Users(UserMixin, db.Model):
     password = db.Column(db.String(500), nullable=False)
 
 
-db.create_all()
+# db.create_all()
 
 
 @login_manager.user_loader
