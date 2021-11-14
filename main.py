@@ -134,7 +134,7 @@ def dashboard():
 
 @app.route("/welcome")
 def welcome():
-    return render_template("welcome-page.html")
+    return render_template("welcome.html")
 
 
 if __name__ == "__main__":
