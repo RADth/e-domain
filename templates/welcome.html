@@ -40,18 +40,30 @@
             <div class="bg-circle-2 bg-circle"></div>
             <div class="bg-circle-3 bg-circle"></div>
             <div class="bg-circle-4 bg-circle"></div>
+
+
+
         </header>
+
+        <!--Trailer-->
+        <section id="trailer">
+            <video controls>
+                <source src="{{ url_for('static', filename='videos/trailer.mp4') }}" type="video/mp4">
+            </video>
+        </section>
+
         <!-- Content section 1-->
         <section id="scroll">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/01.jpg" alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="https://play-lh.googleusercontent.com/bPz1guJ6FHF3oIOEy3KqwpaDDKO-hLRaZoyzmM8bLFLN8fWm6L0_EuUnkwv9iqPo3Ag=s180-rw" alt="..." /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">Game one</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                            <h2 class="display-4">8 Ball Pool</h2>
+                            <p>Play 8 Ball Pool, compete with friends and billiard legends in this multiplayer challenge to become the best in 8 ball pool! Play the hit Miniclip 8 Ball Pool game on your mobile and become a pro player of our league in this 3D free online pool competition.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.miniclip.eightballpool&hl=en&gl=US" target="_blank" class="btn btn-primary">Play Store</a>
                         </div>
                     </div>
                 </div>
@@ -62,12 +74,15 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/02.jpg" alt="..." /></div>
+                        <div class="p-5" style="margin-left: 12rem;">
+                            <img class="img-fluid rounded-circle" src="https://play-lh.googleusercontent.com/EjJV6kCXgX9EIhKEtpYhQF8-BUb5En8sDKpOPiWSQJUxv9_RAfl4tMxyIMkQYgeqC6I=s180-rw" alt="..." />
+                        </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
-                            <h2 class="display-4">Game 2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                            <h2 class="display-4">Basketball stars</h2>
+                            <p>Dribble, shoot, score, WIN in this competitive multiplayer Basketball game on mobile! Grab the ball and take on the world with BASKETBALL STARS.</p>
+                            <a class="btn btn-primary" target="_blank" href="https://play.google.com/store/apps/details?id=com.miniclip.basketballstars&hl=en&gl=US">Play Store</a>
                         </div>
                     </div>
                 </div>
@@ -88,6 +103,9 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="sponsor">
+            <img src="{{ url_for('static', filename='images/sponsor-logo.jpeg') }}">
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-black">

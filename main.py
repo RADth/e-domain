@@ -39,7 +39,7 @@ def home():
     if current_user.is_authenticated:
         return redirect(url_for("dashboard"))
     else:
-        return redirect(url_for("sign_up"))
+        return redirect(url_for("welcome"))
 
 
 @app.route("/sign-up", methods=["GET", "POST"])
