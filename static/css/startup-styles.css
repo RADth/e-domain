@@ -595,3 +595,47 @@ label.valid {
     margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Welcome screen */
+
+/* Trailer */
+.title-page {
+    padding: 5rem 3rem 3rem 5rem;
+    background-color: white;
+}
+.title-page p {
+    font-size: 130%;
+    color: black;
+}
+
+.centralize {
+    position: relative;
+    top: 7rem;
+}
+
+.video {
+    height: 30rem;
+    width: 50rem;
+    position: relative;
+    right: 10rem;
+    margin-bottom: 5rem;
+}
+
+.event-cards {
+    padding: 3rem 0rem 3rem 3rem;
+    background-color: white;
+}
+.event-cards img {
+    height: 15rem;
+}
+
+.sponsor {
+    position: relative;
+    left: 37rem;
+}
+
+.welcome-page-footer {
+    background-color: #343a40;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}

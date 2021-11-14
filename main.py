@@ -8,7 +8,7 @@ import os
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY", "OIEFNOikjesmeolikmo")
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL", "sqlite:///users.db")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -17,8 +17,6 @@ Bootstrap(app)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
-
-remember_me = False
 
 
 class Users(UserMixin, db.Model):
@@ -95,7 +93,6 @@ def sign_up():
 
 @app.route("/sign-in", methods=["GET", "POST"])
 def sign_in():
-    global remember_me
 
     if request.method == "POST":
         email = request.form["email"]
@@ -133,6 +130,11 @@ def log_out():
 def dashboard():
     all_users = db.session.query(Users).all()
     return render_template("index.html", users=all_users)
+
+
+@app.route("/welcome")
+def welcome():
+    return render_template("welcome-page.html")
 
 
 if __name__ == "__main__":
