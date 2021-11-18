@@ -11382,7 +11382,7 @@ header.masthead .bg-circle-4 {
   }
 }
 
-@media (min-width: 483px) {
+@media (max-width: 484px) {
     .masthead-heading {
         font-size: 2rem;
     }
@@ -11396,4 +11396,11 @@ header.masthead .bg-circle-4 {
     width: 15rem;
     height: auto;
     padding-bottom: 2rem;
+}
+
+@media (max-width: 750px) {
+    .basket-ball-img {
+        position: relative;
+        right: 12rem;
+    }
 }
