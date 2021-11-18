@@ -11391,14 +11391,3 @@ header.masthead .bg-circle-4 {
     height: auto;
     padding-bottom: 2rem;
 }
-
-#trailer {
-    text-align: center;
-    margin-top: 4rem;
-}
-
-#trailer video {
-    height: 30rem;
-    border-radius: 3%;
-    width: auto;
-}

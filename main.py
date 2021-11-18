@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
+from flask_gravatar import Gravatar
 import os
 
 app = Flask(__name__)
@@ -17,6 +18,18 @@ Bootstrap(app)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
+
+
+gravatar = Gravatar(
+                    app,
+                    size=100,
+                    rating='g',
+                    default='retro',
+                    force_default=False,
+                    force_lower=False,
+                    use_ssl=False,
+                    base_url=None
+                    )
 
 
 class Users(UserMixin, db.Model):
@@ -135,6 +148,11 @@ def dashboard():
 @app.route("/welcome")
 def welcome():
     return render_template("welcome.html")
+
+
+@app.route("/settings")
+def settings():
+    return render_template("settings.html")
 
 
 if __name__ == "__main__":
