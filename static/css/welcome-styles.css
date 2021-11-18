@@ -11398,7 +11398,11 @@ header.masthead .bg-circle-4 {
     padding-bottom: 2rem;
 }
 
-@media (max-width: 750px) {
+.basket-ball-img {
+    position: relative;
+}
+
+@media (max-width: 500px) {
     .basket-ball-img {
         position: relative;
         right: 12rem;
