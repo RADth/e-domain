@@ -11382,6 +11382,12 @@ header.masthead .bg-circle-4 {
   }
 }
 
+@media (min-width: 483px) {
+    .masthead-heading {
+        font-size: 2rem;
+    }
+}
+
 .sponsor {
     position: relative;
     text-align: center;
