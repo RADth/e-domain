@@ -11381,25 +11381,3 @@ header.masthead .bg-circle-4 {
     font-size: 4rem;
   }
 }
-
-@media (max-width: 484px) {
-    .masthead-heading {
-        font-size: 2rem;
-    }
-}
-
-.sponsor {
-    position: relative;
-    text-align: center;
-}
-.sponsor img {
-    width: 15rem;
-    height: auto;
-    padding-bottom: 2rem;
-}
-
-.basket-ball-img {
-    border-radius: 100%;
-    position: relative;
-    right: 12rem;
-}
