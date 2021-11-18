@@ -11399,12 +11399,7 @@ header.masthead .bg-circle-4 {
 }
 
 .basket-ball-img {
+    border-radius: 100%;
     position: relative;
-}
-
-@media (max-width: 500px) {
-    .basket-ball-img {
-        position: relative;
-        right: 12rem;
-    }
+    right: 12rem;
 }
